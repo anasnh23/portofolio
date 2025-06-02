@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Nama Saya</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">MY-Portofolio</div>
+        <ul class="nav-links">
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#about">Tentang</a></li>
+            <li><a href="#skills">Keterampilan</a></li>
+            <li><a href="#projects">Proyek</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="profile-section" id="home">
+        <img src="Aku.jpeg" alt="Foto Profil" class="profile-img">
+        <h1>ANAS NURHIDAYAT</h1>
+        <p class="subtitle">Mahasiswa Teknologi Informasi | Pengembang Web Full-Stack</p>
+    </header>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <h2>Tentang Saya</h2>
+        <div class="about-content">
+            <p>Saya sangat tertarik dengan Pengembangan Front End dan telah mempelajari berbagai aspek pengembangan front-end selama sekitar 3 tahun. Sepanjang perjalanan belajar saya, saya telah mengembangkan keahlian dalam teknologi utama seperti HTML, PHP, PHP MySQL, Figma, dan Laravel. Saya berpengalaman dalam mendesain dan mengembangkan antarmuka pengguna yang responsif dan dinamis, dan saya bekerja dengan berbagai alat dan kerangka kerja untuk membuat aplikasi yang efisien dan ramah pengguna. Keterampilan saya dalam PHP dan MySQL juga memungkinkan saya untuk mengembangkan aplikasi web yang terintegrasi dengan baik dan berkinerja tinggi. Saya berkomitmen untuk terus tumbuh dan beradaptasi dengan tren dan teknologi terbaru dalam pengembangan web.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section" id="skills">
+        <h2>Keterampilan</h2>
+        <div class="skills-container">
+            <div class="skill-card">
+                <i class="fas fa-code skill-icon"></i>
+                <h3>Pengembangan Web</h3>
+                <div class="skill-item">
+                    <p>HTML5 & CSS3</p>
+                    <div class="progress-bar"><div class="progress" data-progress="90"></div></div>
+                </div>
+                <div class="skill-item">
+                    <p>JavaScript & React.js</p>
+                    <div class="progress-bar"><div class="progress" data-progress="85"></div></div>
+                </div>
+                <div class="skill-item">
+                    <p>Laravel Filament</p>
+                    <div class="progress-bar"><div class="progress" data-progress="80"></div></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-database skill-icon"></i>
+                <h3>Basis Data</h3>
+                <div class="skill-item">
+                    <p>MySQL</p>
+                    <div class="progress-bar"><div class="progress" data-progress="85"></div></div>
+                </div>
+                <div class="skill-item">
+                    <p>MongoDB</p>
+                    <div class="progress-bar"><div class="progress" data-progress="80"></div></div>
+                </div>
+                <div class="skill-item">
+                    <p>Firebase</p>
+                    <div class="progress-bar"><div class="progress" data-progress="75"></div></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-tools skill-icon"></i>
+                <h3>Alat & Teknologi</h3>
+                <div class="skill-item">
+                    <p>Git & GitHub</p>
+                    <div class="progress-bar"><div class="progress" data-progress="90"></div></div>
+                </div>
+                <div class="skill-item">
+                    <p>REST API</p>
+                    <div class="progress-bar"><div class="progress" data-progress="80"></div></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-paint-brush skill-icon"></i>
+                <h3>Desain UI/UX</h3>
+                <div class="skill-item">
+                    <p>Figma</p>
+                    <div class="progress-bar"><div class="progress" data-progress="85"></div></div>
+                </div>
+                <div class="skill-item">
+                    <p>Adobe XD</p>
+                    <div class="progress-bar"><div class="progress" data-progress="80"></div></div>
+                </div>
+                <div class="skill-item">
+                    <p>Prototyping</p>
+                    <div class="progress-bar"><div class="progress" data-progress="75"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section" id="projects">
+        <h2>Proyek</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <img src="kompen.png" alt="Proyek JTI-SIMPEN">
+                <div class="project-info">
+                    <h3>Platform JTI-SIMPEN</h3>
+                    <p>Mengembangkan aplikasi JTI-SIMPEN full-stack dengan menggunakan framework Laravel dan menggunakan Database MySQL.</p>
+                    <button class="project-toggle" data-target="project1-details">Detail</button>
+                    <div class="project-details" id="project1-details">
+                        <p>Aplikasi JTI-SIMPEN adalah platform manajemen kompensasi berbasis web yang dirancang untuk mempermudah pengelolaan data kompensasi mahasiswa. Fitur utama meliputi:</p>
+                        <ul>
+                            <li>Dashboard interaktif untuk admin dan pengguna.</li>
+                            <li>Manajemen data kompensasi dengan CRUD lengkap.</li>
+                            <li>Integrasi dengan MySQL untuk penyimpanan data yang aman.</li>
+                            <li>Antarmuka responsif menggunakan Laravel dan Tailwind CSS.</li>
+                        </ul>
+                        <p>Proyek ini selesai dalam 3 bulan dengan fokus pada efisiensi dan keamanan data.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="websurvey.png" alt="Proyek Inventaris">
+                <div class="project-info">
+                    <h3>Sistem Survey Kepuasan Pelanggan</h3>
+                    <p>Aplikasi berbasis web untuk manajemen survey kepuasan pelanggan dengan dashboard interaktif menggunakan MySQL dan Laravel.</p>
+                    <button class="project-toggle" data-target="project2-details">Detail</button>
+                    <div class="project-details" id="project2-details">
+                        <p>Sistem ini dirancang untuk mengumpulkan dan menganalisis umpan balik pelanggan secara efisien. Fitur utama meliputi:</p>
+                        <ul>
+                            <li>Pembuatan survey dinamis dengan berbagai tipe pertanyaan.</li>
+                            <li>Visualisasi data survey melalui grafik interaktif.</li>
+                            <li>Integrasi dengan Laravel untuk backend yang kuat.</li>
+                            <li>Pengelolaan data menggunakan MySQL dengan performa tinggi.</li>
+                        </ul>
+                        <p>Proyek ini membantu bisnis meningkatkan kepuasan pelanggan berdasarkan data real-time.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="cathouse.png" alt="Proyek Portofolio">
+                <div class="project-info">
+                    <h3>Website Adopsi Kucing</h3>
+                    <p>Merancang portofolio responsif dengan desain modern menggunakan HTML, CSS, dan JavaScript.</p>
+                    <button class="project-toggle" data-target="project3-details">Detail</button>
+                    <div class="project-details" id="project3-details">
+                        <p>Website ini bertujuan untuk memfasilitasi adopsi kucing dengan antarmuka yang ramah pengguna. Fitur utama meliputi:</p>
+                        <ul>
+                            <li>Galeri kucing dengan filter berdasarkan usia dan jenis.</li>
+                            <li>Formulir adopsi interaktif dengan validasi client-side.</li>
+                            <li>Desain responsif menggunakan CSS Grid dan Flexbox.</li>
+                            <li>Animasi halus menggunakan JavaScript untuk pengalaman pengguna yang lebih baik.</li>
+                        </ul>
+                        <p>Proyek ini menunjukkan kemampuan saya dalam desain front-end yang menarik dan fungsional.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <h2>Kontak</h2>
+        <div class="contact-container">
+            <p>Email: <a href="mailto:nama.saya@example.com">2241760068@student.polinema.ac.id</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/anasnurhidayat" target="_blank">linkedin.com/in/anasnurhidayat</a></p>
+            <p>GitHub: <a href="https://github.com/anasnh23" target="_blank">github.com/anasnh23</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Anas Nurhidayat. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
