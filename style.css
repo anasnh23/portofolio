@@ -160,6 +160,8 @@ h2 {
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+/* ===== SKILLS ===== */
+
 .skills-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -215,6 +217,8 @@ h2 {
     transition: width 1.5s ease-in-out;
 }
 
+/* ===== PROJECTS ===== */
+
 .projects-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -247,9 +251,78 @@ h2 {
     color: white;
 }
 
+/* header judul + badge */
+
+.project-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    margin-bottom: 6px;
+}
+
+.project-header h3 {
+    font-size: 1.2rem;
+}
+
+/* badge status project */
+
+.project-badge {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 4px 10px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    background: rgba(4, 12, 30, 0.7);
+    color: #e5f6ff;
+    white-space: nowrap;
+}
+
+.project-badge.live {
+    background: linear-gradient(135deg, #1dd1a1, #10ac84);
+    color: #03130e;
+    border-color: rgba(4, 69, 52, 0.7);
+}
+
+.project-badge.internal {
+    background: linear-gradient(135deg, #ff9f43, #ff6b6b);
+    color: #2b1203;
+    border-color: rgba(110, 47, 0, 0.7);
+}
+
+.project-badge.academic {
+    background: linear-gradient(135deg, #5f27cd, #341f97);
+}
+
+.project-badge.personal {
+    background: linear-gradient(135deg, #48dbfb, #0984e3);
+}
+
+/* tech chips */
+
+.tech-stack {
+    margin: 10px 0 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tech-chip {
+    font-size: 0.8rem;
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(8px);
+    color: #e9f6ff;
+}
+
+/* tombol detail */
+
 .project-toggle {
     display: inline-block;
-    margin-top: 15px;
+    margin-top: 5px;
     padding: 8px 16px;
     background-color: #00b4d8;
     color: white;
@@ -264,6 +337,8 @@ h2 {
     background-color: #80d4e8;
     transform: translateX(5px);
 }
+
+/* detail project */
 
 .project-details {
     max-height: 0;
@@ -312,6 +387,8 @@ h2 {
     transform: scale(1.05);
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
 }
+
+/* ===== CONTACT ===== */
 
 .contact-container {
     background: rgba(255, 255, 255, 0.1);
