@@ -274,7 +274,7 @@ h2 {
 }
 
 .project-details.active {
-    max-height: 500px; /* Adjust as needed */
+    max-height: 1200px; /* dinaikkan supaya muat galeri */
     opacity: 1;
     padding: 20px 25px;
 }
@@ -287,6 +287,30 @@ h2 {
 
 .project-details p {
     margin-bottom: 15px;
+}
+
+/* ==== GALERI GAMBAR DI DALAM PROJECT ==== */
+
+.project-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.project-gallery .gallery-thumb {
+    width: 130px;
+    height: 85px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-gallery .gallery-thumb:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
 }
 
 .contact-container {
@@ -333,6 +357,43 @@ footer {
     transform: translateY(0);
 }
 
+/* ==== MODAL PREVIEW GAMBAR ==== */
+
+.image-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    background: rgba(0, 0, 0, 0.85);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+
+.image-modal-content {
+    max-width: 90%;
+    max-height: 80vh;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.image-modal-caption {
+    margin-top: 1rem;
+    color: #fff;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+.image-modal-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 32px;
+    color: #fff;
+    cursor: pointer;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .nav-links {
@@ -373,6 +434,11 @@ footer {
 
     .projects-container {
         grid-template-columns: 1fr;
+    }
+
+    .project-gallery .gallery-thumb {
+        width: 45%;
+        height: 90px;
     }
 }
 
